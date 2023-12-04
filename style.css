@@ -67,7 +67,7 @@ u {
 .btn {
   display: flex;
   background: transparent;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1rem;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -76,8 +76,13 @@ u {
   border: 1px solid var(--label-color);
   color: var(--link-color);
   cursor: pointer;
+  transition: background 0.62s ease-in-out, color 0.62s ease-in-out;
 }
 
+.btn:hover {
+  background: #000;
+  color: #fff;
+}
 .btn img {
   width: 1rem;
   margin-right: 0.4rem;
@@ -86,6 +91,7 @@ u {
 .divider {
   position: relative;
   text-align: center;
+  margin: 1rem 0;
   color: var(--label-color);
 }
 
@@ -113,7 +119,7 @@ u {
 }
 
 .text-field {
-  margin: 1.2rem 0;
+  margin: 1.6rem 0;
   color: var(--label-color);
 }
 .text-field .top {
@@ -126,11 +132,16 @@ u {
 
 .text-field .bottom input {
   padding: 1rem;
+  cursor: pointer;
   display: block;
   width: 100%;
   border: 1px solid var(--label-color);
   outline: none;
   border-radius: 0.8rem;
+  transition: box-shadow ease-in-out 0.7s 0.3s;
+}
+.text-field .bottom input:focus {
+  box-shadow: 0.3rem 0.5rem 1.56rem rgba(0, 0, 0, 1);
 }
 
 .sign-btn {
@@ -140,26 +151,28 @@ u {
   color: #fff;
 }
 
-@media (width<=980px) {
+@media (width<=452px) {
   .main {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    margin: 0;
+    margin: 0 0 1rem;
+  }
+  .left h1 {
+    font-size: 2.1rem;
   }
   .left {
     padding: 3rem 1rem;
     justify-content: center;
     width: 100%;
-    height: 70vh;
+    height: 75vh;
+    text-align: center;
     margin-bottom: 2rem;
   }
   .btn {
     padding: 1rem;
   }
-  .left h1 {
-    font-size: 1.8rem;
-  }
+
   .left p {
     font-size: 0.8rem;
   }
@@ -173,4 +186,9 @@ u {
   .sign-btn {
     width: 70%;
   }
+}
+
+::selection {
+  background: #000;
+  color: #fff;
 }
