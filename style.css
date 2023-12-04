@@ -149,6 +149,7 @@ u {
   }
   .left {
     padding: 3rem 1rem;
+    justify-content: center;
     width: 100%;
     height: 70vh;
     margin-bottom: 2rem;
