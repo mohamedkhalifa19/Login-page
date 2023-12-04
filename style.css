@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --label-color: #666666;
+  --main-color: #111111;
+  --link-color: #333333;
+}
+
+.main {
+  display: flex;
+  width: 900px;
+  background: #fff;
+  height: auto;
+  overflow: hidden;
+  margin: 2rem auto;
+}
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  font-size: 0.9rem;
+}
+
+.left {
+  background: url("images/bert-b-rhNff6hB41s-unsplash\ 1.png") no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  width: 50%;
+}
+.left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.left p {
+  font-size: 0.9rem;
+  line-height: 1.9rem;
+}
+
+.align-right {
+  text-align: right;
+  display: block;
+}
+.align-left {
+  text-align: left;
+  display: block;
+}
+.right {
+  padding: 2rem;
+  flex-grow: 2;
+}
+
+u {
+  color: var(--main-color) !important;
+}
+
+.right h3 {
+  margin: 2rem 0;
+}
+.btn {
+  display: flex;
+  background: transparent;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.9rem;
+  margin: 1rem 0;
+  border: 1px solid var(--label-color);
+  color: var(--link-color);
+  cursor: pointer;
+}
+
+.btn img {
+  width: 1rem;
+  margin-right: 0.4rem;
+}
+
+.divider {
+  position: relative;
+  text-align: center;
+  color: var(--label-color);
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  transform: translateY(-50%);
+  width: 45%;
+  height: 1px;
+  background: var(--label-color);
+}
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  right: 0;
+  transform: translateY(-50%);
+  width: 45%;
+  height: 1px;
+  background: var(--label-color);
+}
+
+.text-field {
+  margin: 1.2rem 0;
+  color: var(--label-color);
+}
+.text-field .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.text-field .bottom input {
+  padding: 1rem;
+  display: block;
+  width: 100%;
+  border: 1px solid var(--label-color);
+  outline: none;
+  border-radius: 0.8rem;
+}
+
+.sign-btn {
+  width: 50%;
+  padding: 1rem;
+  background: #997825;
+  color: #fff;
+}
